@@ -35,7 +35,7 @@ public class ExcelWriter {
 		CreationHelper createHelper = workbook.getCreationHelper();
 
 		// Create a Sheet
-		Sheet sheet = workbook.createSheet("Employee");
+		Sheet sheet = workbook.createSheet("WNS");
 
 		// Create a Font for styling header cells
 		Font headerFont = workbook.createFont();
@@ -89,7 +89,7 @@ public class ExcelWriter {
 		}
 
 		// Write the output to a file
-		FileOutputStream fileOut = new FileOutputStream("WNS_Final_outPut.xlsx");
+		FileOutputStream fileOut = new FileOutputStream("FINAL_CRIT_EXT.CSV");
 		workbook.write(fileOut);
 		fileOut.close();
 
